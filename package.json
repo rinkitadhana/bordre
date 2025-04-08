@@ -1,0 +1,38 @@
+{
+  "name": "bordre",
+  "version": "1.0.0",
+  "description": "Helping developers to build 10x better UI.",
+  "keywords": [
+    "UI",
+    "UX",
+    "bordre"
+  ],
+  "homepage": "https://github.com/rinkitadhana/EX-10#readme",
+  "bugs": {
+    "url": "https://github.com/rinkitadhana/EX-10/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rinkitadhana/EX-10.git"
+  },
+  "license": "MIT",
+  "author": "Rinkit Adhana",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsup src/index.ts --watch --onSuccess \"node dist/index.js\"",
+    "build": "tsup",
+    "lint": "eslint 'src/**/*.{ts,js}'",
+    "format": "prettier --write src"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.24.0",
+    "eslint": "^9.24.0",
+    "eslint-config-prettier": "^10.1.1",
+    "globals": "^16.0.0",
+    "prettier": "^3.5.3",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.29.1"
+  }
+}
