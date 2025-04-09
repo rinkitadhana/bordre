@@ -1,6 +1,6 @@
 {
   "name": "bordre",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Helping developers to build 10x better UI.",
   "keywords": [
     "UI",
@@ -18,7 +18,16 @@
   "license": "MIT",
   "author": "Rinkit Adhana",
   "type": "module",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/index.mjs",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "scripts": {
     "dev": "tsup src/index.ts --watch --onSuccess \"node dist/index.js\"",
     "build": "tsup",
